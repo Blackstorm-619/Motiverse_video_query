@@ -91,4 +91,24 @@ Parse natural language queries to retrieve dashcam videos from a 500-video datas
 
 
 \## How to Run
+pip install pandas numpy boto3 python-dotenv
+Set environment variables
+export AWS_ACCESS_KEY_ID=your_key
+export AWS_SECRET_ACCESS_KEY=your_secret
+export AWS_REGION=us-east-1
+Run notebook
+jupyter notebook "problem2 (1).ipynb"
 
+## Key Insights
+1. Prompt engineering > embeddings for this task
+2. Post-processing critical — Claude alone scored ~75%, corrections brought it to 83.2%
+3. Domain knowledge matters — traffic/collision terminology was crucial
+
+## What's Next
+- Add vector embeddings for semantic search
+- Quantify correction logic effectiveness
+- Test on larger query sets
+
+---
+
+Built for MotiveVerse AI Hackathon 2025
